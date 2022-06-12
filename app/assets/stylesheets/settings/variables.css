@@ -1,0 +1,15 @@
+/* Colors */
+:root {
+    --black: #222;
+    --ocean-green: #80cbc4;
+}
+
+/* Typography */
+:root {
+    --heading-font: "Bebas Neue Regular";
+}
+
+/* Media Query */
+:root {
+    --tablet-bp: 768px
+}
