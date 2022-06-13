@@ -3,3 +3,5 @@
 @import 'settings/variables.css';
 
 @import './critical/header.css';
+@import './critical/intro.css';
+@import './critical/content.css';

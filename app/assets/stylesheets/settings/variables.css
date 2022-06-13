@@ -2,14 +2,14 @@
 :root {
     --black: #222;
     --ocean-green: #80cbc4;
+    --honey-yellow: #ffd180;
+    /*--honey-yellow-light: #ffe0b2;*/
+    /* --honey-yellow: #ffe082; */
+    --honey-yellow-light: #fff3e0
 }
 
 /* Typography */
 :root {
     --heading-font: "Bebas Neue Regular";
-}
-
-/* Media Query */
-:root {
-    --tablet-bp: 768px
+    --text-font: "Montserrat Regular";
 }

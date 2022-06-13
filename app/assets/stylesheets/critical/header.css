@@ -1,10 +1,16 @@
 header {
-    border-bottom: 1px solid var(--ocean-green);
-    display: flex;
-    justify-content: space-between;
-    padding: 16px;
-    position: sticky;
-    top: 0;
+}
+
+@media screen and (min-width: 1024px) {
+    header {
+        background-color: var(--honey-yellow);
+        border-bottom: 2px solid var(--ocean-green);
+        display: flex;
+        justify-content: space-between;
+        padding: 16px;
+        position: sticky;
+        top: 0;
+    }
 }
 
 nav {
@@ -14,21 +20,40 @@ nav {
 nav a {
     color: var(--black);
     font-family: var(--heading-font);
+    position: relative;
     text-decoration: none;
     transition: opacity .25s ease-in-out;
 }
 
-@media screen and (min-width: 768px) {
+nav a.current {
+    color: var(--ocean-green);
+}
+
+@media screen and (min-width: 1024px) {
     nav a {
-        font-size: 20px;
-        margin-right: 16px;
+        font-size: 24px;
+        margin-right: 24px;
     }
 
     nav a:last-child {
         margin-right: 0;
     }
-}
 
-nav a:hover {
-    opacity: .85;
+    nav a:hover {
+        opacity: .65;
+    }
+
+    nav a.current:before {
+        background-color: var(--ocean-green);
+        content: '';
+        height: 2px;
+        left: 0;
+        position: absolute;
+        top: -4px;
+        width: 100%;
+    }
+
+    nav a.current:hover {
+        opacity: 1;
+    }
 }
