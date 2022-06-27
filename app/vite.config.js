@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite'
+import nunjucks from 'vite-plugin-nunjucks'
 
 const { resolve } = require('path')
 
@@ -15,5 +16,8 @@ export default defineConfig({
                 cocktail: resolve(__dirname, 'lista-dei-cocktail/index.html')
             }
         }
-    }
+    },
+    plugins: [
+        nunjucks(),
+    ]
 })
