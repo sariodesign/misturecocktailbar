@@ -10,7 +10,9 @@
   </head>
   <body>
     <header>
-      <div>Logo</div>
+      <div>
+        <a href="/">Logo</a>
+      </div>
       <nav>
         <a class="current" href="/scopri-la-sede/">Sede</a>
         <a href="/lo-staff-di-misture/">Staff</a>
@@ -19,23 +21,48 @@
       </nav>
     </header>
     <main class="page-venue">
-      <section class="intro">
-        <h1>Sede</h1>
-        <article class="content">
-          <figure class="content-media">
-            <picture>
-              <source srcset="https://source.unsplash.com/500x500/?cocktail" media="(min-width: 1024px)">
-              <img src="https://source.unsplash.com/300x300/?cocktail" alt="Fusettone"/>
-            </picture>
-          </figure>
-          <div class="content-text">
-            <h2>Lorem Ipsum</h2>
-            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-          </div>
-        </article>
+      <section class="hero">
+        <video muted autoplay>
+          <source src="../assets/video/preview.webm" type="video/webm">
+          <source src="../assets/video/preview.mp4" type="video/mp4">
+        </video>
       </section>
     </main>
-    <footer>Info footer</footer>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-item">Logo</div>
+        <div class="footer-item">
+          <p>
+            Misture Cocktail Bar<br>
+            Via Santa Lucia, 70<br>
+            80132 Napoli NA
+          </p>
+          <address>
+            <ul>
+              <li>
+                <a href="mailto:indirizzo@email.it">indirizzo@email.it</a>
+              </li>
+              <li>
+                <a href="tel:0123456789">0123456789</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-item">
+          <ul>
+            <li><a href="/scopri-la-sede/">Sede</a></li>
+            <li><a href="/lo-staff-di-misture/">Staff</a></li>
+            <li><a href="/eventi-e-news/">Eventi & News</a></li>
+            <li><a href="/lista-dei-cocktail/">Cocktail Menu</a></li>
+          </ul>
+        </div>
+        <div class="footer-item">
+          <h3>Seguici</h3>
+          <a href="#" target="_blank">Instagram</a>
+          <a href="#" target="_blank">Facebook</a>
+        </div>
+      </div>
+    </footer>
     <script type="module" src="/main.js"></script>
   </body>
 </html>

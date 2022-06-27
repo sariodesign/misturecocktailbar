@@ -1,17 +1,21 @@
 .intro {
   background-color: var(--honey-yellow-light);
   min-height: 100vh;
-  padding: 0 16px
+  padding: 32px 16px
 }
 
 @media (min-width: 375px) {
   .intro {
-    padding: 0 24px
+    padding: 32px 24px
   }
 }
 
 @media (min-width: 1024px) {
   .intro {
-    padding: 0
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
   }
 }

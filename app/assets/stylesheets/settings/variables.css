@@ -2,10 +2,8 @@
 :root {
     --black: #222;
     --ocean-green: #80cbc4;
-    --honey-yellow: #ffd180;
-    /*--honey-yellow-light: #ffe0b2;*/
-    /* --honey-yellow: #ffe082; */
-    --honey-yellow-light: #fff3e0
+    --honey-yellow: #ffe082;
+    --honey-yellow-light: #fff3e0;
 }
 
 /* Typography */

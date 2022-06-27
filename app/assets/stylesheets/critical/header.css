@@ -3,13 +3,14 @@ header {
 
 @media screen and (min-width: 1024px) {
     header {
-        background-color: var(--honey-yellow);
+        background-color: var(--honey-yellow-light);
         border-bottom: 2px solid var(--ocean-green);
         display: flex;
         justify-content: space-between;
         padding: 16px;
         position: sticky;
         top: 0;
+        z-index: 1;
     }
 }
 

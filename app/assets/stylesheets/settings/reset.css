@@ -29,6 +29,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
+	font-family: var(--text-font);
 	line-height: 1;
 }
 ol, ul {
@@ -45,4 +46,9 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+img {
+	height: auto;
+	max-width: 100%;
+	vertical-align: bottom;
 }

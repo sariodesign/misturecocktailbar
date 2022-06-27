@@ -1,3 +1,7 @@
+.content {
+  margin: 0 0 32px;
+}
+
 .content h2 {
   font-family: var(--heading-font);
   font-size: 32px;
@@ -10,15 +14,58 @@
   margin: 0;
 }
 
+.content-media {
+  margin: 0 0 32px;
+}
+
+.content-media picture {
+  display: block;
+}
+
 @media (min-width: 1024px) {
   .content {
+    align-items: center;
     display: flex;
-    max-width: 980px;
-    margin: 0 auto;
-    padding: 32px 0
+    margin: 0 0 64px;
+    padding: 0 0 0 10vw;
+  }
+
+  .content h2 {
+    color: var(--honey-yellow-light);
+    font-size: 112px;
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000
+  }
+
+  .content-media {
+    border-radius: 150px 0 150px 0;
+    box-shadow: 25px 25px 0px 0px var(--ocean-green);
+    flex: 1 0 auto;
+    margin: 0;
+    max-width: 35vw;
+    overflow: hidden
+  }
+
+  .content--reverse {
+    flex-direction: row-reverse;
+    padding: 0 10vw 0 0;
+  }
+
+  .content--reverse .content-media {
+    border-radius: 0 150px 0 150px;
+    box-shadow: 25px -25px 0px 0px var(--ocean-green)
   }
 
   .content-text {
-    padding: 0 0 0 24px
+    padding: 0 32px
+  }
+}
+
+@media (min-width: 1440px) {
+  .content-text{
+    padding: 0 64px
+  }
+
+  .content-media {
+    max-width: 50vw
   }
 }
