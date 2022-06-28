@@ -1,3 +1,7 @@
+.hero {
+  height: 85vh;
+}
+
 .hero video {
   width: 100%;
 }

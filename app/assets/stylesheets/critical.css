@@ -2,6 +2,8 @@
 @import 'settings/font-face.css';
 @import 'settings/variables.css';
 
+@import './critical/typography.css';
+@import './critical/buttons.css';
 @import './critical/header.css';
 @import './critical/hero.css';
 @import './critical/intro.css';

@@ -2,11 +2,6 @@
   margin: 0 0 32px;
 }
 
-.content h2 {
-  font-family: var(--heading-font);
-  font-size: 32px;
-}
-
 .content p {
   font-family: var(--text-font);
   font-size: 18px;
@@ -28,12 +23,6 @@
     display: flex;
     margin: 0 0 64px;
     padding: 0 0 0 10vw;
-  }
-
-  .content h2 {
-    color: var(--honey-yellow-light);
-    font-size: 112px;
-    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000
   }
 
   .content-media {
