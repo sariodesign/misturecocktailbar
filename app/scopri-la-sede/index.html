@@ -1,3 +1,5 @@
+{% set currentPage = 1 %}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,16 +8,16 @@
     <style>@import '../assets/stylesheets/critical.css';</style>
     <link rel="stylesheet" href="../assets/stylesheets/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Misture Cocktail Bar</title>
+    <title>La Sede | Misture Cocktail Bar</title>
   </head>
   <body>
-    {% include ".partials/header.html" %}
+    {% include "./partials/header.html" %}
     <main class="page-venue">
 
       <section class="hero">
-        <video muted autoplay>
-          <source src="../assets/video/preview.webm" type="video/webm">
-          <source src="../assets/video/preview.mp4" type="video/mp4">
+        <video muted autoplay loop>
+          <source src="../assets/video/intro-venue.webm" type="video/webm">
+          <source src="../assets/video/intro-venue.mp4" type="video/mp4">
         </video>
         <div class="hero-content">
           <button class="button button-bordered">Press me</button>

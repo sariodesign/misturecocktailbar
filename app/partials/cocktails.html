@@ -1,0 +1,75 @@
+{% set cocktails = [
+    {
+        name: "Frasco",
+        photo: { avif: "/images/frasco.avif", webp: "/images/frasco.webp", jpeg: "/images/frasco.jpeg" },
+        ingredients: [ "Crema di Mezcal","Ananas lattofermentata","Champagne di ananas","Lime"]
+    },
+    {
+        name: "Honey Martini",
+        photo: { avif: "/images/honey-martini.avif", webp: "/images/honey-martini.webp", jpeg: "/images/honey-martini.jpeg" },
+        ingredients: [ "Crema di Mezcal","Ananas lattofermentata","Champagne di ananas","Lime"]
+    },
+    {
+        name: "Fusettone",
+        photo: { avif: "/images/fusettone.avif", webp: "/images/fusettone.webp", jpeg: "/images/fusettone.jpeg" },
+        ingredients: [ "Crema di Mezcal","Ananas lattofermentata","Champagne di ananas","Lime"]
+    },
+    {
+        name: "Strawberry margarita",
+        photo: { avif: "/images/strawberry-margarita.avif", webp: "/images/strawberry-margarita.webp", jpeg: "/images/strawberry-margarita.jpeg" },
+        ingredients: [ "Crema di Mezcal","Ananas lattofermentata","Champagne di ananas","Lime"]
+    },
+    {
+        name: "Popstar",
+        photo: { avif: "/images/popstar.avif", webp: "/images/popstar.webp", jpeg: "/images/popstar.jpeg" },
+        ingredients: [ "Crema di Mezcal","Ananas lattofermentata","Champagne di ananas","Lime"]
+    },
+    {
+        name: "Anti-dote",
+        photo: { avif: "/images/anti-dote.avif", webp: "/images/anti-dote.webp", jpeg: "/images/anti-dote.jpeg" },
+        ingredients: [ "Crema di Mezcal","Ananas lattofermentata","Champagne di ananas","Lime"]
+    },
+    {
+        name: "Banhattan",
+        photo: { avif: "/images/banhattan.avif", webp: "/images/banhattan.webp", jpeg: "/images/banhattan.jpeg" },
+        ingredients: [ "Crema di Mezcal","Ananas lattofermentata","Champagne di ananas","Lime"]
+    },
+    {
+        name: "Mitico",
+        photo: { avif: "/images/mitico.avif", webp: "/images/mitico.webp", jpeg: "/images/mitico.jpeg" },
+        ingredients: [ "Crema di Mezcal","Ananas lattofermentata","Champagne di ananas","Lime"]
+    },
+    {
+        name: "Mare",
+        photo: { avif: "/images/mare.avif", webp: "/images/mare.webp", jpeg: "/images/mare.jpeg" },
+        ingredients: [ "Crema di Mezcal","Ananas lattofermentata","Champagne di ananas","Lime"]
+    },
+    {
+        name: "Vesuvio",
+        photo: { avif: "/images/vesuvio.avif", webp: "/images/vesuvio.webp", jpeg: "/images/vesuvio.jpeg" },
+        ingredients: [ "Crema di Mezcal","Ananas lattofermentata","Champagne di ananas","Lime"]
+    }
+  ] 
+%}
+
+<div class="cocktail-list">
+    {% for item in cocktails  %}
+        <div class="cocktail-item">
+            <figure class="content-media">
+                <picture>
+                    <source srcset="{{item.photo.avif}}" type="image/avif">
+                    <source srcset="{{item.photo.webp}}" type="image/webp">
+                    <img src="{{ item.photo.jpeg }}" alt="{{ item.name }}" />
+                </picture>
+            </figure>
+            <div class="cocktail-info">
+                <h2 class="cocktail-name">{{ item.name }}</h2>
+                <ul class="cocktail-ingredients">
+                    {% for ingredient in item.ingredients %}
+                        <li>{{ ingredient }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    {% endfor %}
+</div>

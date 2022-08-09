@@ -1,6 +1,7 @@
 /* Colors */
 :root {
-    --black: #222;
+    --true-black: #000;
+    --black: #333;
     --ocean-green: #80cbc4;
     --honey-yellow: #ffe082;
     --honey-yellow-light: #fff3e0;
@@ -8,6 +9,7 @@
 
 /* Typography */
 :root {
-    --heading-font: "Bebas Neue Regular";
-    --text-font: "Montserrat Regular";
+    --heading-font: 'Bebas Neue Regular';
+    --text-font: 'Montserrat Regular';
+    --alternative-font: 'Shadow Light Regular'; 
 }

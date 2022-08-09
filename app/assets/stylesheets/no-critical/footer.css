@@ -1,0 +1,31 @@
+footer {
+    border-top: 1px solid var(--ocean-green);
+}
+
+.footer-container {
+    font-size: 16px;
+    line-height: 30px;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.footer-item {
+    margin-bottom: 24px;
+}
+
+.footer-container a {
+    color: #000;
+}
+
+@media (min-width: 1024px) {
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 120px 0;
+    }
+
+    .footer-item {
+        margin-bottom: 0
+    }
+}

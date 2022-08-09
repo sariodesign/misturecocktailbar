@@ -1,5 +1,8 @@
 import gsap from 'gsap';
+import menuHandler from './menu';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+menuHandler();
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -21,3 +24,4 @@ gsap.utils.toArray('.intro').forEach(section => {
     onLeaveBack: () => move.reverse(),
   })
 })
+

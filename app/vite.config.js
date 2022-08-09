@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite'
-import nunjucks from 'vite-plugin-nunjucks'
+import nunjucksPlugin from 'vite-plugin-nunjucks'
 
 const { resolve } = require('path')
 
@@ -18,6 +18,6 @@ export default defineConfig({
         }
     },
     plugins: [
-        nunjucks(),
+        nunjucksPlugin(),
     ]
 })

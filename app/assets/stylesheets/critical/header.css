@@ -1,4 +1,19 @@
 header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px;
+    position: relative;
+}
+
+.header-menu-btn {
+    position: relative;
+    z-index: 3;
+}
+
+@media screen and (min-width: 1024px) {
+    .header-menu-btn {
+        display: none
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -15,25 +30,73 @@ header {
 }
 
 nav {
+    background-color: #fff;
+    box-sizing: border-box;
     display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding-top: 48px;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    transform: translateX(100%);
+    transition: transform .35s ease-in-out, opacity .3s ease-in-out .1s;
+    text-align: right;
+    right: 0;
+    width: 100vw;
+    z-index: 2;
+}
+
+nav.is-open {
+    opacity: 1;
+    transform: translateX(0)
+}
+
+@media screen and (min-width: 1024px) {
+    nav {
+        background-color: transparent;
+        flex-direction: row;
+        height: auto;
+        opacity: 1;
+        padding: 0;
+        position: relative;
+        transform: none;
+        width: auto;
+    }
 }
 
 nav a {
     color: var(--black);
+    font-size: 48px;
     font-family: var(--heading-font);
+    margin-bottom: 16px;
+    padding-right: 24px;
     position: relative;
     text-decoration: none;
     transition: opacity .25s ease-in-out;
 }
 
-nav a.current {
-    color: var(--ocean-green);
+nav a.is-current {
+    color: var(--true-black);
+}
+
+nav a.is-current:after {
+    background-color: var(--ocean-green);
+    content: '';
+    display: inline-block;
+    height: 3px;
+    left: 0;
+    position: absolute;
+    top: 100%;
+    width: 100%;
 }
 
 @media screen and (min-width: 1024px) {
     nav a {
         font-size: 24px;
+        margin-bottom: 0;
         margin-right: 24px;
+        padding-right: 0;
     }
 
     nav a:last-child {
