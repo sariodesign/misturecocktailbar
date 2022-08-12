@@ -10,10 +10,14 @@
 }
 
 .content-media {
-  border-radius: 20px;
+  border-radius: 20px 0 20px 0;
   box-shadow: 10px 10px 0px 0px var(--ocean-green);
   margin: 0 0 32px;
   overflow: hidden
+}
+
+.content--reverse .content-media {
+  border-radius: 0 20px 0 20px
 }
 
 .content-media picture {
@@ -29,7 +33,7 @@
   }
 
   .content-media {
-    border-radius: 40px;
+    border-radius: 100px 0 100px 0;
     box-shadow: 20px 20px 0px 0px var(--ocean-green);
     flex: 1 0 auto;
     margin: 0;
@@ -47,6 +51,10 @@
   }
 
   .content-text {
+    padding: 0 32px 0 52px;
+  }
+
+  .content--reverse .content-text {
     padding: 0 32px
   }
 }
