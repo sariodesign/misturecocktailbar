@@ -1,1 +1,3 @@
-console.log('venue')
+import menuHandler from './menu';
+
+menuHandler();

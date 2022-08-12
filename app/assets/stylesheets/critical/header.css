@@ -1,4 +1,6 @@
 header {
+    background-color: var(--white);
+    border-bottom: 2px solid var(--ocean-green);
     display: flex;
     justify-content: space-between;
     padding: 0 16px;
@@ -18,11 +20,9 @@ header {
 
 @media screen and (min-width: 1024px) {
     header {
-        background-color: var(--honey-yellow-light);
-        border-bottom: 2px solid var(--ocean-green);
         display: flex;
         justify-content: space-between;
-        padding: 16px;
+        padding: 16px 32px;
         position: sticky;
         top: 0;
         z-index: 1;
@@ -30,6 +30,7 @@ header {
 }
 
 nav {
+    align-items: flex-end;
     background-color: #fff;
     box-sizing: border-box;
     display: flex;
@@ -54,6 +55,7 @@ nav.is-open {
 
 @media screen and (min-width: 1024px) {
     nav {
+        align-items: center;
         background-color: transparent;
         flex-direction: row;
         height: auto;
@@ -85,7 +87,7 @@ nav a.is-current:after {
     content: '';
     display: inline-block;
     height: 3px;
-    left: 0;
+    left: -24px;
     position: absolute;
     top: 100%;
     width: 100%;
@@ -107,14 +109,8 @@ nav a.is-current:after {
         opacity: .65;
     }
 
-    nav a.current:before {
-        background-color: var(--ocean-green);
-        content: '';
-        height: 2px;
+    nav a.is-current:after {
         left: 0;
-        position: absolute;
-        top: -4px;
-        width: 100%;
     }
 
     nav a.current:hover {

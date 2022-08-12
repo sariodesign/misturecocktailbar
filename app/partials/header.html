@@ -21,9 +21,12 @@
 {% set currentClass = 'is-current' %}
 
 <header>
-    <div>
-        <a href="/">Logo</a>
-    </div>
+    <a href="/">
+        <picture>
+            <source srcset="/images/header-logo-desktop.svg" media="(min-width: 1024px)">
+            <img src="/images/header-logo.svg" alt="Misture Cocktail Bar Logo"/>
+        </picture>
+    </a>
     <button class="header-menu-btn js-menu-handler">
         Menu
     </button>
