@@ -3,6 +3,8 @@
 }
 
 .hero video {
+  height: 100%;
+  object-fit: cover;
   width: 100%;
 }
 

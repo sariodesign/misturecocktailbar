@@ -1,18 +1,21 @@
 .cocktail-container {
     overflow: hidden;
-    padding: 0 24px
+    padding: 0 24px;
+    position: relative;
 }
 
 .cocktail-list {
     display: flex;
     flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 40px 0;
 }
 
 @media (min-width: 768px) {
     .cocktail-list {
         flex-direction: row;
-        overflow-y: scroll;
-        /* margin-left: 10vw; */
+        padding: 80px 0;
         scroll-snap-type: both;
     }
 }

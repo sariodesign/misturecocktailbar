@@ -8,14 +8,14 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "cssnano": "^5.1.11",
+    "cssnano": "^5.1.13",
     "gsap": "^3.10.4",
-    "postcss": "^8.4.14",
-    "vite": "^2.9.9",
+    "postcss": "^8.4.16",
+    "vite": "^2.9.15",
     "vite-plugin-nunjucks": "^0.1.10"
   },
   "dependencies": {
-    "autoprefixer": "^10.4.7"
+    "autoprefixer": "^10.4.8"
   },
   "browserslist": [
     "last 2 versions"

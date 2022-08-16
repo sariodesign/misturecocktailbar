@@ -1,0 +1,20 @@
+.book {
+  align-items: center;
+  background-color: var(--honey-yellow-light);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 0;
+  position: relative;
+  text-align: center;
+}
+
+.book-info {
+  margin-bottom: 24px;
+}
+
+@media (min-width: 1024px) {
+  .book {
+    padding: 80px 0;
+  }
+}
