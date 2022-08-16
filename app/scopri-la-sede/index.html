@@ -13,9 +13,6 @@
           <source src="../assets/video/intro-venue.webm" type="video/webm">
           <source src="../assets/video/intro-venue.mp4" type="video/mp4">
         </video>
-        <!--<div class="hero-content">
-          <button class="button button-bordered">Press me</button>
-        </div>-->
       </section>
 
       <div class="content-container">
@@ -23,9 +20,12 @@
           <article class="content">
             <figure class="content-media">
               <picture>
-                <source srcset="/images/location.avif" type="image/avif">
-                <source srcset="/images/location.webp" type="image/webp">
-                <img src="/images/location.jpeg" alt="Misture location" />
+                <source srcset="/images/location.avif" type="image/avif" media="(min-width: 1024px)">
+                <source srcset="/images/location.webp" type="image/webp" media="(min-width: 1024px)">
+                <source srcset="/images/location.jpeg" type="image/webp" media="(min-width: 1024px)">
+                <source srcset="/images/location-mobile.avif" type="image/avif">
+                <source srcset="/images/location-mobile.webp" type="image/webp">
+                <img src="/images/location-mobile.jpg" alt="Misture location" />
               </picture>
             </figure>
             <div class="content-text">

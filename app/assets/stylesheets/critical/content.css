@@ -12,7 +12,8 @@
 .content-media {
   border-radius: 20px;
   box-shadow: 10px 10px 0px 0px var(--ocean-green);
-  margin: 0 0 32px;
+  margin: 0 auto 32px;
+  max-width: 500px;
   overflow: hidden
 }
 
