@@ -22,13 +22,15 @@
 
 <header>
     <a href="/">
-        <picture>
+        <picture class="header-logo">
             <source srcset="/images/header-logo-desktop.svg" media="(min-width: 1024px)">
             <img src="/images/header-logo.svg" alt="Misture Cocktail Bar Logo"/>
         </picture>
     </a>
     <button class="header-menu-btn js-menu-handler">
-        Menu
+        <svg width="32" height="32" id="icon-menu" viewBox="0 0 32 32">
+            <path d="M4 17.333h24c0.736 0 1.333-0.597 1.333-1.333s-0.597-1.333-1.333-1.333h-24c-0.736 0-1.333 0.597-1.333 1.333s0.597 1.333 1.333 1.333zM4 9.333h24c0.736 0 1.333-0.597 1.333-1.333s-0.597-1.333-1.333-1.333h-24c-0.736 0-1.333 0.597-1.333 1.333s0.597 1.333 1.333 1.333zM4 25.333h24c0.736 0 1.333-0.597 1.333-1.333s-0.597-1.333-1.333-1.333h-24c-0.736 0-1.333 0.597-1.333 1.333s0.597 1.333 1.333 1.333z"></path>
+        </svg>
     </button>
     <nav class="js-menu">
         {% for item in menuLink %}
