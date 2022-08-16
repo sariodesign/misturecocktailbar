@@ -10,14 +10,14 @@
 }
 
 .content-media {
-  border-radius: 20px 0 20px 0;
+  border-radius: 20px;
   box-shadow: 10px 10px 0px 0px var(--ocean-green);
   margin: 0 0 32px;
   overflow: hidden
 }
 
 .content--reverse .content-media {
-  border-radius: 0 20px 0 20px
+  border-radius: 20px
 }
 
 .content-media picture {
@@ -29,11 +29,11 @@
     align-items: center;
     display: flex;
     margin: 0 0 64px;
-    padding: 0 0 0 10vw;
+    max-width: 960px;
   }
 
   .content-media {
-    border-radius: 100px 0 100px 0;
+    border-radius: 30px;
     box-shadow: 20px 20px 0px 0px var(--ocean-green);
     flex: 1 0 auto;
     margin: 0;
@@ -42,11 +42,10 @@
 
   .content--reverse {
     flex-direction: row-reverse;
-    padding: 0 10vw 0 0;
   }
 
   .content--reverse .content-media {
-    border-radius: 0 100px 0 100px;
+    border-radius: 30px;
     box-shadow: 25px -25px 0px 0px var(--ocean-green)
   }
 
@@ -60,12 +59,16 @@
 }
 
 @media (min-width: 1440px) {
+  .content {
+    max-width: 1200px
+  }
+
   .content-text{
     padding: 0 64px
   }
 
   .content-media {
-    border-radius: 60px;
+    border-radius: 40px;
     box-shadow: 30px 30px 0px 0px var(--ocean-green);
     max-width: 50%
   }

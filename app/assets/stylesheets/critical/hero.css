@@ -1,22 +1,9 @@
 .hero {
-  height: 85vh;
   position: relative;
 }
 
 .hero video {
   width: 100%;
-}
-
-.hero--fixed {
-  left: 0;
-  position: fixed;
-  top: 98px;
-  width: 100%
-}
-
-.hero--fixed + .content-container {
-  position: relative;
-  padding-top: calc(85vh - 58px);
 }
 
 .hero:after {
@@ -30,5 +17,16 @@
 }
 
 @media (min-width: 1024px) {
+  .hero--fixed {
+    height: 85vh;
+    left: 0;
+    position: fixed;
+    top: 98px;
+    width: 100%
+  }
 
+  .hero--fixed + .content-container {
+    position: relative;
+    padding-top: calc(85vh - 58px);
+  }
 }
