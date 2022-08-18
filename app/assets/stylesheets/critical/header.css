@@ -3,9 +3,18 @@ header {
     border-bottom: 2px solid var(--ocean-green);
     display: flex;
     justify-content: space-between;
-    padding: 16px;
-    position: relative;
+    left: 0;
     max-width: 100vw;
+    padding: 16px;
+    position: fixed;
+    top: 0;
+    transition: transform .2s ease-in-out;
+    width: 100%;
+    z-index: 3;
+}
+
+header.translate-out {
+    transform: translateY(-100%);
 }
 
 .header-logo {
@@ -58,18 +67,17 @@ header {
     }
 }
 
-nav {
+.header-nav {
     align-items: flex-end;
     background-color: #fff;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
-    padding-top: 48px;
+    height: calc(100vh - 79px);
     position: absolute;
     opacity: 0;
-    top: 0;
+    top: 79px;
     transform: translateX(100%);
     transition: transform .35s ease-in-out, opacity .3s ease-in-out .1s;
     text-align: right;
@@ -78,13 +86,13 @@ nav {
     z-index: 2;
 }
 
-nav.is-open {
+.header-nav.is-open {
     opacity: 1;
     transform: translateX(0)
 }
 
 @media screen and (min-width: 1024px) {
-    nav {
+    .header-nav {
         align-items: center;
         background-color: transparent;
         flex-direction: row;
@@ -93,11 +101,12 @@ nav.is-open {
         padding: 0;
         position: relative;
         transform: none;
+        top: 0;
         width: auto;
     }
 }
 
-nav a {
+.header-nav a {
     color: var(--black);
     font-size: 64px;
     font-family: var(--heading-font);
@@ -108,11 +117,11 @@ nav a {
     transition: opacity .25s ease-in-out;
 }
 
-nav a.is-current {
+.header-nav a.is-current {
     color: var(--true-black);
 }
 
-nav a.is-current:after {
+.header-nav a.is-current:after {
     background-color: var(--ocean-green);
     content: '';
     display: inline-block;
@@ -124,26 +133,26 @@ nav a.is-current:after {
 }
 
 @media screen and (min-width: 1024px) {
-    nav a {
+    .header-nav a {
         font-size: 24px;
         margin-bottom: 0;
         margin-right: 24px;
         padding-right: 0;
     }
 
-    nav a:last-child {
+    .header-nav a:last-child {
         margin-right: 0;
     }
 
-    nav a:hover {
+    .header-nav a:hover {
         opacity: .65;
     }
 
-    nav a.is-current:after {
+    .header-nav a.is-current:after {
         left: 0;
     }
 
-    nav a.current:hover {
+    .header-nav a.current:hover {
         opacity: 1;
     }
 }
