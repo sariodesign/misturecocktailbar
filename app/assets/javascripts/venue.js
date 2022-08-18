@@ -1,3 +1,3 @@
-import menuHandler from './menu';
+import headerInit from './header';
 
-menuHandler();
+headerInit();

@@ -1,8 +1,8 @@
 import gsap from 'gsap';
-import menuHandler from './menu';
+import headerInit from './header';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-menuHandler();
+headerInit();
 
 gsap.registerPlugin(ScrollTrigger);
 
