@@ -4,18 +4,24 @@
     position: relative;
 }
 
+@media (min-width: 768px) {
+    .cocktail-container {
+        padding: 0;
+    }
+}
+
 .cocktail-list {
     display: flex;
     flex-direction: column;
     overflow-y: auto;
-    overflow-x: hidden;
+    overflow-x: scroll;
     padding: 40px 0;
 }
 
 @media (min-width: 768px) {
     .cocktail-list {
         flex-direction: row;
-        padding: 80px 0;
+        padding: 80px 0 0;
         scroll-snap-type: both;
     }
 }
@@ -32,6 +38,7 @@
     .cocktail-item {
         align-items: center;
         flex-direction: row;
+        margin-bottom: 0;
         width: 85vw;
     }
 }
@@ -44,6 +51,7 @@
 }
 
 .cocktail-name {
+    color: var(--ocean-green);
     flex-grow: 1;
     font-family: var(--alternative-font);
     font-size: 48px;
@@ -56,8 +64,11 @@
     }
 }
 
-.cocktail-item .content-media {
-    max-width: 50%;
+@media (min-width: 768px) {
+    .cocktail-item .content-media {
+        max-width: 50%;
+        margin-bottom: 0;
+    }
 }
 
 .cocktail-ingredients {
