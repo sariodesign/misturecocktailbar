@@ -55,6 +55,8 @@ footer {
 .footer-social {
     align-items: center;
     display: flex;
+    margin-bottom: 8px;
+    text-decoration: none;
 }
 
 .footer-social svg {
