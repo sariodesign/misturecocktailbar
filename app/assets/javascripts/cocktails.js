@@ -6,9 +6,9 @@ headerInit();
 
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.utils.toArray('.intro').forEach(section => {
+gsap.utils.toArray('.cocktail-wrap').forEach(section => {
 
-  const lines = section.querySelectorAll('.content');
+  const lines = section.querySelectorAll('.cocktail-item');
 
   const move =  gsap.timeline({paused:true})
   .from(lines, {
@@ -24,4 +24,3 @@ gsap.utils.toArray('.intro').forEach(section => {
     onLeaveBack: () => move.reverse(),
   })
 })
-

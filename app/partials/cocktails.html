@@ -54,21 +54,23 @@
 
 <div class="cocktail-list">
     {% for item in cocktails  %}
-        <div class="cocktail-item">
-            <figure class="content-media">
-                <picture>
-                    <source srcset="{{item.photo.avif}}" type="image/avif">
-                    <source srcset="{{item.photo.webp}}" type="image/webp">
-                    <img src="{{ item.photo.jpeg }}" alt="{{ item.name }}" />
-                </picture>
-            </figure>
-            <div class="cocktail-info">
-                <h2 class="cocktail-name">{{ item.name }}</h2>
-                <ul class="cocktail-ingredients">
-                    {% for ingredient in item.ingredients %}
-                        <li>{{ ingredient }}</li>
-                    {% endfor %}
-                </ul>
+        <div class="cocktail-wrap">
+            <div class="cocktail-item">
+                <figure class="content-media">
+                    <picture>
+                        <source srcset="{{item.photo.avif}}" type="image/avif">
+                        <source srcset="{{item.photo.webp}}" type="image/webp">
+                        <img src="{{ item.photo.jpeg }}" alt="{{ item.name }}" />
+                    </picture>
+                </figure>
+                <div class="cocktail-info">
+                    <h2 class="cocktail-name">{{ item.name }}</h2>
+                    <ul class="cocktail-ingredients">
+                        {% for ingredient in item.ingredients %}
+                            <li>{{ ingredient }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
             </div>
         </div>
     {% endfor %}
