@@ -1,9 +1,10 @@
 .intro-title {
-    color: var(--honey-yellow-light);
-    font-family: var(--heading-font);
+    color: var(--black);
+    font-family: var(--alternative-font);
     font-size: 48px;
+    font-weight: 700;
     letter-spacing: 4px;
-    text-shadow: 2px 0 0 var(--ocean-green), -2px 0 0 var(--ocean-green), 0 2px 0 var(--ocean-green), 0 -2px 0 var(--ocean-green), 1px 1px var(--ocean-green), -1px -1px 0 var(--ocean-green), 1px -1px 0 var(--ocean-green), -1px 1px 0 var(--ocean-green);
+    /* text-shadow: 2px 0 0 var(--ocean-green), -2px 0 0 var(--ocean-green), 0 2px 0 var(--ocean-green), 0 -2px 0 var(--ocean-green), 1px 1px var(--ocean-green), -1px -1px 0 var(--ocean-green), 1px -1px 0 var(--ocean-green), -1px 1px 0 var(--ocean-green); */
 }
 
 @media (min-width: 1024px) {

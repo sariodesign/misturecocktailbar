@@ -32,3 +32,13 @@
 .button-link {
     text-decoration: none
 }
+
+.button-yellow {
+    border-color: var(--honey-yellow);
+    color: var(--honey-yellow)
+}
+
+.button-white {
+    border-color: var(--white);
+    color: var(--white)
+}
