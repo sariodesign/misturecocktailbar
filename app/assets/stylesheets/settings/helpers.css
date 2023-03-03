@@ -1,3 +1,16 @@
 .is-locked {
   overflow: hidden;
 }
+
+@media screen and (max-width: 1023px) {
+  .hide-mobile {
+    display: none
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+  .hide-desktop {
+    display: none
+  }
+}

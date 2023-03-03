@@ -11,7 +11,7 @@
 
 /* Typography */
 :root {
-    --heading-font: 'Bebas Neue Regular';
-    --text-font: 'Montserrat Regular';
-    --alternative-font: 'Shadow Light Regular'; 
+    --heading-font--black: 'RobotoSlab Black';
+    --text-font--medium: 'RobotoSlab Medium';
+    --text-font--light: 'RobotoSlab Light';
 }

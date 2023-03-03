@@ -1,8 +1,15 @@
 .hero {
+  height: 100vh;
   position: relative;
 }
 
-.hero video {
+.hero picture {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.hero img {
   height: 100%;
   object-fit: cover;
   width: 100%;
@@ -31,8 +38,8 @@
   padding-top: calc(80vh + 79px);
 }
 
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
   .hero--fixed {
 
   }
-}
+} */

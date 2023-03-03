@@ -1,23 +1,17 @@
 @font-face {
-    font-family: 'Montserrat Regular';
+    font-family: 'RobotoSlab Light';
     font-weight: 400;
-    src:  url('../../fonts/Montserrat-Regular.woff2') format('woff2')
+    src:  url('../../fonts/RobotoSlab-Light.woff2') format('woff2')
 }
 
 @font-face {
-    font-family: 'Montserrat SemiBold';
-    font-weight: 600;
-    src:  url('../../fonts/Montserrat-SemiBold.woff2') format('woff2')
+    font-family: 'RobotoSlab Medium';
+    font-weight: 500;
+    src:  url('../../fonts/RobotoSlab-Medium.woff2') format('woff2')
 }
 
 @font-face {
-    font-family: 'Bebas Neue Regular';
-    font-weight: 400;
-    src:  url('../../fonts/BebasNeue-Regular.woff2') format('woff2')
-}
-
-@font-face {
-    font-family: 'Shadow Light Regular';
-    font-weight: 400;
-    src:  url('../../fonts/ShadowsIntoLight-Regular.woff2') format('woff2')
+    font-family: 'RobotoSlab Black';
+    font-weight: 900;
+    src:  url('../../fonts/RobotoSlab-Black.woff2') format('woff2')
 }

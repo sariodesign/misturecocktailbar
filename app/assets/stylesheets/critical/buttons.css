@@ -5,9 +5,11 @@
     border: 0;
     color: var(--ocean-green);
     cursor: pointer;
-    font-family: var(--heading-font);
+    font-family: var(--text-font--medium);
     font-size: 24px;
     line-height: 32px;
+    padding: 4px 8px;
+    text-decoration: none;
 }
 
 .button-bordered {

@@ -11,6 +11,14 @@
   <body>
     {% include "./partials/header.html" %}
     <main>
+      <section class="hero">
+        <picture>
+          <source srcset="../assets/images/bg-home.jpeg" media="(min-width: 1024px)">
+          <source srcset="../assets/images/bg-home.webp" media="(min-width: 1024px)" type="image/webp">
+          <source srcset="../assets/images/bg-home-mobile.webp" type="image/webp">
+          <img src="../assets/images/bg-home-mobile.jpeg" alt="Misture cocktail bar" />
+        </picture>
+      </section>
     </main>
     {% include "./partials/footer.html"  %}
     <script type="module" src="/main.js"></script>

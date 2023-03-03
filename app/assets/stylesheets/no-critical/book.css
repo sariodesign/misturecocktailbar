@@ -22,9 +22,9 @@
 
 .book-info {
   color: var(--honey-yellow);
-  margin: 0 auto 24px;
+  margin: 0 auto;
   position: relative;
-  width: 1024px;
+  text-align: center;
   z-index: 1;
 }
 
@@ -51,9 +51,23 @@
   }
 }
 
+.book-cta {
+  align-items: center;
+  display: flex;
+  row-gap: 30px;
+  flex-direction: column;
+  justify-content: center;
+}
+
 @media (min-width: 1024px) {
   .book {
     background-position: center;
-    padding: 10vh 0 25vh;
+    padding: 30vh 0;
+  }
+
+  .book-cta {
+    column-gap: 30px;
+    flex-direction: row;
+    justify-content: center;
   }
 }

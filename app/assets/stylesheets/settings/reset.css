@@ -37,7 +37,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	font-family: var(--text-font);
+	font-family: var(--text-font--light);
 	line-height: 1;
 	overflow-x: hidden;
 }

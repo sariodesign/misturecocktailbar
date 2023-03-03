@@ -1,5 +1,6 @@
 .intro {
-  background-color: var(--honey-yellow-light);
+  background-color: var(--black);
+  color: var(--white);
   min-height: 100vh;
   padding: 32px 16px
 }

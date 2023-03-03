@@ -13,7 +13,9 @@ export default defineConfig({
                 sede: resolve(__dirname, 'scopri-la-sede/index.html'),
                 staff: resolve(__dirname, 'lo-staff-di-misture/index.html'),
                 eventi: resolve(__dirname, 'eventi-e-news/index.html'),
-                cocktail: resolve(__dirname, 'lista-dei-cocktail/index.html')
+                cocktail: resolve(__dirname, 'lista-dei-cocktail/index.html'),
+                backoffice: resolve(__dirname, 'backoffice/index.html'),
+                dashboard: resolve(__dirname, 'dashboard/index.html')
             }
         }
     },

@@ -1,0 +1,22 @@
+{% set currentPage = 2 %}
+{% set title = 'Food Menu | Misture Cocktail Bar' %}
+
+<!DOCTYPE html>
+<html lang="en">
+  {% include "./partials/head.html" %}
+  <body>
+    {% include "./partials/header.html" %}
+    <main class="page-staff">
+      <section class="hero">
+
+      </section>
+      
+      {% include "./partials/staff-block.html"  %}
+
+      {% include "./partials/book.html"  %}
+      
+    </main>
+    {% include "./partials/footer.html"  %}
+    <script type="module" src="../assets/javascripts/staff.js"></script>
+  </body>
+</html>

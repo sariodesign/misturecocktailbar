@@ -1,0 +1,166 @@
+{% set cocktails = [
+        {
+            name: "Nanas Secret",
+            ingredients: ["Irish Whiskey", "Pastiera Mix"],
+            price: "10",
+            photos: [
+                {
+                    mobile: '/images/cocktails/nanas-secret.jpeg',
+                    desktop: '/images/cocktails/nanas-secret.jpeg'
+                }
+            ]
+        },
+        {
+            name: ". G",
+            ingredients: ["Cachaça", "Cocoa Bitter", "Passion Fruit", "Spicy Honey", "Lemon"],
+            price: "10",
+            photos: [
+                {
+                    mobile: '/images/cocktails/punto-g.jpeg',
+                    desktop: '/images/cocktails/punto-g.jpeg'
+                }
+            ]
+        },
+        {
+            name: "Banhattan",
+            ingredients: ["Rhum", "Banana Ketchup", "Lemon", "Egg white"],
+            price: "12",
+            photos: [
+                {
+                    mobile: '/images/cocktails/banhattan.jpeg',
+                    desktop: '/images/cocktails/banhattan.jpeg'
+                }
+            ]
+        },
+        {
+            name: "Vesuvio",
+            ingredients: ["Vodka", "Vesuvio mix"],
+            price: "12",
+            photos: [
+                {
+                    mobile: '/images/cocktails/vesuvio.jpg',
+                    desktop: '/images/cocktails/vesuvio.jpg'
+                }
+            ]
+        },
+        {
+            name: "Terra",
+            ingredients: ["Mezcal", "Chartreuse", "Ginger", "Turmeric", "Muscovado"],
+            price: "10",
+            photos: [
+                {
+                    mobile: '/images/cocktails/terra.jpeg',
+                    desktop: '/images/cocktails/terra.jpeg'
+                }
+            ]
+        },
+        {
+            name: "Anti-dote",
+            ingredients: ["Scotch Whisky", "Irish Whiskey", "Chartreuse", "Passion Fruit", "Ginger
+            Lemon", "Nutmeg"],
+            price: "9",
+            photos: [
+                {
+                    mobile: '/images/cocktails/anti-dote.jpeg',
+                    desktop: '/images/cocktails/anti-dote.jpeg'
+                }
+            ]
+        },
+        {
+            name: "Pump king",
+            ingredients: ["Tequila", "Pimento", "Pumpkin", "Spiced Milk Foam"],
+            price: "10",
+            photos: [
+                {
+                    mobile: '/images/cocktails/pump-king.jpeg',
+                    desktop: '/images/cocktails/pump-king.jpeg'
+                }
+            ]
+        },
+        {
+            name: "Royal Garibaldi",
+            ingredients: ["Santoni", "Orange", "Franciacorta"],
+            price: "10",
+            photos: [
+                {
+                    mobile: '/images/cocktails/royal-garibaldi.jpeg',
+                    desktop: '/images/cocktails/royal-garibaldi.jpeg'
+                }
+            ]
+        },
+        {
+            name: "Oyuwari",
+            ingredients: ["Whisky", "Hot Hibiscus", "Lapsang Tea"],
+            price: "10",
+            photos: [
+                {
+                    mobile: '/images/cocktails/oyuwari.jpeg',
+                    desktop: '/images/cocktails/oyuwari.jpeg'
+                }
+            ]
+        },
+        {
+            name: "Wellerman",
+            ingredients: ["Wellerman Rum", "Raspberry Wine"],
+            price: "",
+            photos: [
+                {
+                    mobile: '/images/cocktails/wellerman.jpeg',
+                    desktop: '/images/cocktails/wellerman.jpeg'
+                }
+            ]
+        },
+        {
+            name: "Royalty Punch",
+            ingredients: ["(Sharing Cocktail)", "Gin", "Jasmine Tea", "Raspberry", "Blueberry"],
+            price: "35",
+            photos: [
+                {
+                    mobile: '/images/cocktails/royalty-punch.jpeg',
+                    desktop: '/images/cocktails/royalty-punch.jpeg'
+                }
+            ]
+        },
+        {
+            name: "Whisky/Rum Flight",
+            ingredients: ["A tasting experience of four 20ml portions of any whisky or rum of your choice."],
+            price: "35",
+            photos: [
+                {
+                    mobile: '/images/cocktails/terra.jpeg',
+                    desktop: '/images/cocktails/terra.jpeg'
+                }
+            ]
+        }
+    ] 
+%}
+
+
+{% for item in cocktails %}
+<section class="intro">
+    {% if loop.index % 2 != 0 %}
+    <div class="content">
+    {% else %}
+    <div class="content content--reverse">
+    {% endif %}
+      <figure class="content-media">
+        {% for photo in item.photos %}
+            <picture>
+                <source srcset="{{ photo.desktop }}" media="(min-width: 1024px)">
+                <img src="{{ photo.mobile }}" alt="{{Fusettone}}" height="800" width="800" />
+            </picture>
+        {% endfor %}
+      </figure>
+      <div class="content-text">
+        <h2 class="cocktail-name">{{ item.name }}</h2>
+        <ul class="cocktail-ingredients">
+        {% for ingredient in item.ingredients %}
+            <li>{{ ingredient }}</li>
+        {% endfor %}
+        </ul>
+        <span class="cocktail-price">{{ item.price }}</span>
+      </div>
+    </div>
+  </section>
+{% endfor %}
+  

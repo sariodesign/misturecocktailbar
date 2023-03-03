@@ -1,15 +1,14 @@
 .intro-title {
-    color: var(--black);
-    font-family: var(--alternative-font);
+    color: var(--white);
+    font-family: var(--heading-font--black);
     font-size: 48px;
     font-weight: 700;
-    letter-spacing: 4px;
+    text-transform: uppercase;
     /* text-shadow: 2px 0 0 var(--ocean-green), -2px 0 0 var(--ocean-green), 0 2px 0 var(--ocean-green), 0 -2px 0 var(--ocean-green), 1px 1px var(--ocean-green), -1px -1px 0 var(--ocean-green), 1px -1px 0 var(--ocean-green), -1px 1px 0 var(--ocean-green); */
 }
 
 @media (min-width: 1024px) {
     .intro-title {
         font-size: 64px;
-        letter-spacing: 8px;
     }
 }
