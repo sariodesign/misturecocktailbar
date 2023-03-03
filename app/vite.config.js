@@ -10,10 +10,9 @@ export default defineConfig({
         rollupOptions: {
             input: {
                 main: resolve(__dirname, 'index.html'),
-                sede: resolve(__dirname, 'scopri-la-sede/index.html'),
-                staff: resolve(__dirname, 'lo-staff-di-misture/index.html'),
-                eventi: resolve(__dirname, 'eventi-e-news/index.html'),
-                cocktail: resolve(__dirname, 'lista-dei-cocktail/index.html'),
+                cocktail: resolve(__dirname, 'cocktail/index.html'),
+                food: resolve(__dirname, 'food/index.html'),
+                wine: resolve(__dirname, 'wine-and-bubbles/index.html'),
                 backoffice: resolve(__dirname, 'backoffice/index.html'),
                 dashboard: resolve(__dirname, 'dashboard/index.html')
             }
